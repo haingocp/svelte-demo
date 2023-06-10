@@ -3,7 +3,7 @@
 import type { PageLoad, PageLoadEvent } from './$types';
 
 // it so that it gets served as a static asset in production
-export const prerender = true;
+// export const prerender = true;
 // /** @type {import('./$types').PageLoad} */
 export async function load({ params, fetch }: PageLoadEvent) {
 	const res = await fetch('/api/random-number');
